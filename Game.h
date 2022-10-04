@@ -25,10 +25,7 @@ class Game{
 
         //Accessors
 
-        //test 2
-        //testt
-        //this is a test
-        //test 3
+        
         //Modifiers
 
 
