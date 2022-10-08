@@ -51,6 +51,8 @@ void Game::render(){ //renders all variables to the screen, last thing done.
 
     //render stuff here
 
+    
+
     this->window->display();
 }
 
