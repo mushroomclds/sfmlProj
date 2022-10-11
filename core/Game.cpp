@@ -1,4 +1,4 @@
-#include "Game.h"
+#include "Game.hpp"
 /*=============================================================================
 |                         Constructor/Deconstructor
 =============================================================================*/
@@ -15,6 +15,9 @@ Game::~Game(){ //deconstrutor definition
 =============================================================================*/
 void Game::initVariables(){
     this->endGame = false;
+    circleOBJ = new circle(this->data); //make shaoe(s) in own class and draw it 
+    this->circleTest.setFillColor(sf::Color::Green); //make object in game class and draw it 
+    this->circleTest.setRadius(50.f);
 }
 
 void Game::initWindow(){
@@ -51,7 +54,9 @@ void Game::render(){ //renders all variables to the screen, last thing done.
 
     //render stuff here
 
-    
+    circleOBJ->drawCircle(*this->window);
+
+    this->window->draw(circleTest);
 
     this->window->display();
 }
