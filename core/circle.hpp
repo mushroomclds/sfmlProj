@@ -27,4 +27,6 @@ class circle {
         sf::RenderWindow window1;
         sf::CircleShape circleObj;
         sf::RectangleShape rectObj;
+        sf::CircleShape triangle; 
+        sf::CircleShape pentagon;
 };
