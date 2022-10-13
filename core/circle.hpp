@@ -29,4 +29,6 @@ class circle {
         sf::RectangleShape rectObj;
         sf::CircleShape triangle; 
         sf::CircleShape pentagon;
+        sf::Font font;
+        sf::Text text;
 };
