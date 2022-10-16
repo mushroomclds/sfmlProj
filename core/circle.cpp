@@ -19,7 +19,7 @@ circle::circle(std::shared_ptr<sf::RenderWindow> data) : data(data){ //construct
     pentagon.setPosition(sf::Vector2f(400.f, 50.f));
     
     try{
-        if(font.loadFromFile("Magical5 Story.ttf")){
+        if(font.loadFromFile("Magical Story.ttf")){
             std::cout << "loaded font" << std::endl;
         }
         else{
